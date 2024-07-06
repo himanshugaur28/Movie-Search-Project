@@ -1,0 +1,94 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("https://wallpaperaccess.com/full/2000061.jpg");
+}
+h1{
+    margin: 30px;
+    font-size: 2.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(250, 235, 215);
+    text-shadow: 2px 2px 4px rgb(250, 235, 215);
+}
+.search{
+    width: 60vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.searchinput{
+    width: 100%;
+    padding: 8px 16px;
+    border-radius: 25px;
+    background-color: rgb(47, 47, 47);
+    color: antiquewhite;
+}
+.searchicon{
+    position: absolute;
+    right: 15px;
+    color: antiquewhite;
+    transition: transform 0.1s linear;
+}
+.searchicon:active{
+    transform: scale(0.85);
+}
+.container{
+    width: 80vw;
+    margin: 50px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px; 
+    margin-left: 10vw;
+}
+.moviecard{
+    transition: transform 0.1s linear;
+    width: 200px;
+    position: relative;
+}
+.moviecard:hover {
+    transform: scale(1.05);
+  }
+.moviecard img{
+    height: auto;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.moviecard h3{
+    /* position: absolute; */
+    font-size: smaller;
+    margin: 0px 2px 0px 8px;
+    padding: 5px;
+    color: antiquewhite;
+}
+.moviecard span{
+    /* position: absolute; */
+    font-size: smaller;
+    margin: 10px 0px 0px 8px;
+    padding: 5px;
+    color: antiquewhite;
+    /* background-color: gray; */
+}
+.moviedetails{
+    position: absolute;
+    background-color: rgb(47, 47, 47);
+    width: 100%;
+    bottom: 0px;
+    padding: 5px 0px 5px 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.moviecard p{
+    position:absolute;
+    margin: 4px 0px 0px 4px;
+    background-color: rgb(47, 47, 47);
+    border-radius: 10px;
+    color: antiquewhite;
+    font-size: small;
+    padding: 0px 4px;
+}
